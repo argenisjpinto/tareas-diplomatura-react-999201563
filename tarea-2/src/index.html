@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinos Buenos Aires</title>
+    <link rel="icon" href="./assets/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="./assets/logo.png" alt="Vinos Buenos Aires Logo" id="logo">
+            <span class="brand-name">Vinos Buenos Aires</span>
+        </div>
+        <h1 id="page-title">Registro al evento</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#contact">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Bienvenidos a Vinos Buenos Aires</h2>
+
+            <p>
+                Nos alegra recibirte en este espacio creado para celebrar lo que más nos apasiona: 
+                <strong>el vino, las historias que nacen alrededor de una copa y los momentos que compartimos</strong> 
+                con quienes elegimos. Somos una bodega urbana en el corazón de Buenos Aires, donde cada etiqueta 
+                que seleccionamos cuenta con una personalidad propia y un origen que vale la pena descubrir.
+            </p>
+
+            <p>
+                Con esta misma filosofía nace nuestro <strong>evento exclusivo de degustación</strong>, una experiencia 
+                pensada para quienes quieren explorar sabores, aprender más sobre el mundo del vino y disfrutar una 
+                tarde distinta, guiada por aromas, texturas y conversaciones que fluyen sin prisa.
+            </p>
+
+            <p>
+                Será una oportunidad para conocer variedades icónicas, descubrir maridajes simples pero inolvidables 
+                y conectar con otros amantes del vino en un ambiente cálido y relajado.
+            </p>
+
+            <p>
+                Te invitamos a registrarte y reservar tu lugar. <strong>Vení a vivir una experiencia sensorial</strong> 
+                donde cada copa abre la puerta a una nueva historia.
+            </p>
+            <img src="./assets/vineyard.png" alt="vineyard" class="home-image">
+        </section>
+
+        <section id="about">
+            <h2>Sobre Nosotros</h2>
+            <p>
+                Creemos que cada botella cuenta una historia: del viñedo, del productor y de
+                la mesa donde se abre. Nuestro trabajo es acercarte vinos honestos, ricos y
+                fáciles de elegir, para que solo tengas que decidir con quién compartirlos.
+            </p>
+
+            <h3>Nuestras Variedades</h3>
+
+            <div class="wine-list">
+                <article class="wine-item">
+                    <h4>Malbec</h4>
+                    <img src="./assets/malbec.png" alt="Vino Malbec" class="wine-image">
+                    <p>
+                        El Malbec es nuestro clásico indiscutido: de color intenso, con notas
+                        a ciruelas maduras, algo de vainilla y un toque especiado. Es un vino
+                        con buen cuerpo pero muy amable en boca, ideal para acompañar carnes
+                        a la parrilla, pastas con salsas rojas o simplemente una charla larga
+                        de sábado a la noche.
+                    </p>
+                </article>
+
+                <article class="wine-item">
+                    <h4>Cabernet Sauvignon</h4>
+                    <img src="./assets/cabernet-sauvignon.png" alt="Vino Cabernet Sauvignon" class="wine-image">
+                    <p>
+                        El Cabernet Sauvignon es perfecto para quienes disfrutan de vinos con
+                        carácter. Tiene taninos firmes, aromas a frutos negros, pimiento y
+                        un ligero toque de pimienta negra. Va muy bien con quesos duros,
+                        guisos, carnes al horno y esos platos que se cocinan lento, sin apuro.
+                    </p>
+                </article>
+
+                <article class="wine-item">
+                    <h4>Merlot</h4>
+                    <img src="./assets/merlot.png" alt="Vino Merlot" class="wine-image">
+                    <p>
+                        El Merlot es la opción suave y versátil: frutado, redondo y fácil de
+                        tomar. Tiene notas a cerezas y frambuesas, con taninos suaves que lo
+                        hacen ideal para quienes están empezando a explorar el mundo del vino.
+                        Acompaña muy bien pizzas, tapas, tablas de quesos y encuentros entre amigos.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Regístrate al evento de degustación</h2>
+            <p class="contact-intro">
+                Completa el formulario para reservar tu lugar en nuestra próxima degustación
+                en Buenos Aires. <br>
+                El evento es solo para <strong>mayores de 18 años.</strong></p>
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required placeholder="Escribe tu nombre">
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Edad:</label>
+                    <input type="number" id="age" name="age" required min="0" placeholder="Ingresa tu edad">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="tucorreo@ejemplo.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensaje (opcional):</label>
+                    <textarea id="message" name="message" placeholder="Cuéntanos qué tipo de vinos te gustan"></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <p id="resultMessage" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Vinos Buenos Aires · Desarrollado por Argenis Pinto. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="./app/form.js"></script>
+</body>
+</html>
