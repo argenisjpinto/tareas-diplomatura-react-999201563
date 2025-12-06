@@ -27,16 +27,16 @@ Luego haz doble clic en **index.html** o ábrelo desde tu editor preferido.
 ## 📸 Capturas
 
 Inicio  
-![Inicio](./assets/home-sample.jpg)
+![Inicio](./src/assets/home-sample.jpg)
 
 Acerca de  
-![Acerca de](./assets/about-sample.jpg)
+![Acerca de](./src/assets/about-sample.jpg)
 
 Formulario  
-![Formulario](./assets/form-sample.jpg)
+![Formulario](./src/assets/form-sample.jpg)
 
 Footer  
-![Footer](./assets/footer-sample.jpg)
+![Footer](./src/assets/footer-sample.jpg)
 
 ---
 
