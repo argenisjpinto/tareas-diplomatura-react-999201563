@@ -25,6 +25,10 @@ tarea3-javascript-avanzado/
 ├── App/
 │   └── main.js              # Lógica completa del gestor de tareas
 │
+├── assets/
+│   ├── console.jpg
+│   └── interface.jpg
+│
 └── README.md
 ```
 
@@ -72,3 +76,21 @@ Console
 
 **Argenis Pinto**  
 Diplomado en Programación Fullstack
+**Unidad:** Módulo 1 – JavaScript Avanzado
+**Fecha:** 2025 
+
+---
+
+## 📚 Fuentes y recursos utilizados
+
+**Bibliografía:**
+- Freeman, E. y Robson, E. Head First JavaScript Programming. O’Reilly Media, 2014.
+- Flanagan, D. *JavaScript: The Definitive Guide.* O’Reilly Media, 2020  
+- MDN Web Docs – HTML, CSS, JavaScript y validación de formularios  
+
+---
+
+**Recursos visuales:**
+- Emojis Unicode
+
+---
