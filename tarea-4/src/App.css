@@ -1,0 +1,44 @@
+.container {
+  min-height: 90vh;
+  background: linear-gradient(135deg, #d2d4dc 0%, #4e6da3 100%);
+  padding: 60px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+    font-weight: bold;
+    background-color: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    color: rgb(55, 58, 113);
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 40px 16px;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 30px 12px;
+    gap: 20px;
+  }
+}

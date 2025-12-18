@@ -1,0 +1,99 @@
+.tarjeta {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 32px 24px;
+  box-shadow: 19px 25px 10px -4px rgba(89,72,75,0.75);
+  max-width: 340px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.tarjeta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+}
+
+.tarjeta:hover::before {
+  transform: scaleX(1);
+}
+
+.tarjeta-imagen {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 20px;
+  border: 5px solid #f0f0f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover .tarjeta-imagen {
+  transform: scale(1.05);
+}
+
+.tarjeta-nombre {
+  font-size: 1.6em;
+  margin: 0 0 8px 0;
+  color: #2c3e50;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.tarjeta-profesion {
+  font-size: 1.1em;
+  margin: 0 0 16px 0;
+  color: #667eea;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.9em;
+}
+
+.tarjeta-descripcion {
+  font-size: 0.95em;
+  color: #666;
+  line-height: 1.7;
+  margin: 0;
+  font-weight: 400;
+}
+
+@media (max-width: 480px) {
+  .tarjeta {
+    padding: 24px 20px;
+    max-width: 100%;
+  }
+
+  .tarjeta-imagen {
+    width: 140px;
+    height: 140px;
+  }
+
+  .tarjeta-nombre {
+    font-size: 1.4em;
+  }
+
+  .tarjeta-profesion {
+    font-size: 0.85em;
+  }
+
+  .tarjeta-descripcion {
+    font-size: 0.9em;
+  }
+}
