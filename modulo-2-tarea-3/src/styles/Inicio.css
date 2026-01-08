@@ -1,0 +1,115 @@
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+  min-height: calc(100vh - 200px);
+}
+
+.main::before {
+  content: 'Bienvenido';
+  display: block;
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+
+.main::after {
+  content: 'Navega por las secciones usando el menú superior';
+  display: block;
+  font-size: 1.1rem;
+  color: var(--color-text-light);
+  text-align: center;
+  max-width: 600px;
+  margin-top: 0.5rem;
+}
+
+.inicio-card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius);
+  padding: 3rem 2rem;
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.inicio-card h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.inicio-card p {
+  font-size: 1.05rem;
+  color: var(--color-text-light);
+  line-height: 1.7;
+}
+
+.inicio-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+  padding: 0 1.5rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.feature-card {
+  background-color: var(--color-surface);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+}
+
+.feature-card p {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .main::before {
+    font-size: 2rem;
+  }
+
+  .main::after {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .inicio-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .inicio-card h2 {
+    font-size: 1.75rem;
+  }
+
+  .inicio-features {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+}

@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg: #f8f9fa;
+  --color-surface: #ffffff;
+  --color-text: #2c3e50;
+  --color-text-light: #6c757d;
+  --color-border: #e9ecef;
+  --color-accent: #495057;
+  --color-hover: #f1f3f5;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.08);
+  --radius: 8px;
+  --transition: all 0.2s ease;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  padding: 1.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+header nav li a {
+  display: block;
+  padding: 0.6rem 1.5rem;
+  text-decoration: none;
+  color: var(--color-text-light);
+  font-weight: 500;
+  font-size: 0.95rem;
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+header nav li a:hover {
+  background-color: var(--color-hover);
+  color: var(--color-text);
+}
+
+footer {
+  background-color: var(--color-surface);
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: auto;
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.06);
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: 500;
+  color: var(--color-text);
+  font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  transition: var(--transition);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-sm);
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+button:hover {
+  background-color: var(--color-text);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.inicio,
+.contacto-main,
+.nosotros-main,
+.notfound-main,
+.login-main,
+.producto,
+.dashboard,
+section {
+  flex: 1;
+  padding: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.inicio h2,
+.contacto-main h2,
+.nosotros-main h2,
+.notfound-main h2,
+.login-main h2,
+.producto h2,
+.dashboard h2,
+section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+  align-items: center;
+}
+
+.nosotros-main p,
+.notfound-main p,
+section p {
+  margin-bottom: 1rem;
+  color: var(--color-text-light);
+  line-height: 1.7;
+}
+
+.contacto-form {
+  background-color: var(--color-surface);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+}
+
+.login-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+}
+
+.login-box {
+  background-color: var(--color-surface);
+  padding: 2.5rem 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.login-box h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.login-box input,
+.login-box button {
+  width: 100%;
+  max-width: none;
+}
+
+section {
+  background-color: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.25rem;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .contacto-main,
+  .nosotros-main,
+  .notfound-main,
+  section {
+    padding: 2rem 1rem;
+  }
+}
