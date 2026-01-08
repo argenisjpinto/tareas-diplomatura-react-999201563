@@ -83,7 +83,7 @@ README.md
 ## Instrucciones de instalación y ejecución
 1. Clonar el repositorio:
 ```bash
-git clone <url-del-repositorio>
+git clone https://github.com/argenisjpinto/tareas-diplomatura-react-999201563.git
 ```
 
 2. Instalar dependencias:
@@ -116,19 +116,19 @@ npm run dev
 ![Contacto](./src/assets/contacto.jpg)
 
 ### Producto con ID dinámico (sin query params)
-![Producto con ID dinámico](./src/assets/producto-id-dinamico.jpg)
+![Producto con ID dinámico](./src/assets/producto-id-dinamico.jpg
 
 ### Producto con query params
-![Producto con query params](./src/assets/producto-query-params.jpg)
+![Producto con query params](./src/assets/producto-query-params-rojo.jpg)
 
 ### Producto – cambio de query params (toggle)
-![Producto toggle query params](./src/assets/producto-query-toggle.jpg)
+![Producto toggle query params](./src/assets/producto-query-params-verde.jpg)
 
 ### Dashboard desprotegido (redirección a Login)
-![Dashboard desprotegido](./src/assets/dashboard-desprotegido-login.jpg)
+![Dashboard desprotegido](./src/assets/dashboard-desprotegido.jpg)
 
 ### Dashboard protegido (acceso permitido)
-![Dashboard protegido](./src/assets/dashboard-protegido.jpg)
+![Dashboard protegido](./src/assets/dashboard-protegido-login.jpg)
 
 ---
 
