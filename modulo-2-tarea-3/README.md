@@ -116,7 +116,7 @@ npm run dev
 ![Contacto](./src/assets/contacto.jpg)
 
 ### Producto con ID dinámico (sin query params)
-![Producto con ID dinámico](./src/assets/producto-id-dinamico.jpg
+![Producto con ID dinámico](./src/assets/producto-id-dinamico.jpg)
 
 ### Producto con query params
 ![Producto con query params](./src/assets/producto-query-params-rojo.jpg)
