@@ -137,7 +137,7 @@ npm run dev
 
 ## Créditos
 - **Estudiante:** Argenis Pinto  
-- **Curso:** React Inicial  
+- **Curso:** React (Diplomatura FullStack)  
 - **Módulo:** 2  
 - **Unidad:** 4 – Eventos  
 
