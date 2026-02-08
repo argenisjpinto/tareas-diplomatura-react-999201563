@@ -95,6 +95,7 @@ src/
 │   ├── home.jpg
 │   ├── login.jpg
 │   ├── not-found.jpg
+│   ├── register.jpg
 │   ├── task-lists-form.jpg
 │   └── task-lists-matrix.jpg
 ├── components/
